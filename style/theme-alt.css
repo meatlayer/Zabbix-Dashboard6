@@ -30,7 +30,7 @@ body#bg-two {position:relative; margin: 40px 0px 0px 10px;}
 .hostbox.nok5 {width: 535px;}
 
 /* futher box markups */
-.title {font-size: 14px;	font-weight: bold; text-align: center; color: #FFF;	padding: 0px 0px 5px 0px;}
+.title {font-size: 14px;	font-weight: bold; text-align: left; text-indent: 15px; color: #FFF;	padding: 0px 0px 5px 0px;}
 .hostid {font-family: Ubuntu; font-size: 8px; position: absolute; top: 5px; right: 5px; color: #D7D7D7;}
 .nok2 .hostid {color:#232323;} /* more readable text */
 .nok2 .title{color: #232323;} /* more readable text */
@@ -48,3 +48,32 @@ div#date {font-size: 10px; text-align: center;}
 div#time { font-size: 20px; text-align: center;}
 
 div#sheetname {position: absolute; top: -36px; right: 20px; z-index: 200; font-size: 40px; color: #E8E8E8;}
+
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(254, 15, 0, 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(210, 11, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+
+.blink {
+
+  background: rgba(244, 0, 0, 0.74);
+  border-radius: 4px;
+  animation: shadow-pulse 1s infinite;
+}

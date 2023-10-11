@@ -1,17 +1,21 @@
-Zabbix-Dashboard
+Zabbix-Dashboard 6
 ================
 
-Trying to build a better dashboard function for Zabbix via the php api.
+Simple Dashboard function for Zabbix via the <a href="https://github.com/confirm/PhpZabbixApi">Zabbix php api</a>.
+Cloned from https://github.com/incama/Zabbix-Dashboard and updated to work with Zabbix 6.4.
 
-<img src="http://all-about-incama.org/wp-content/uploads/2014/11/Zabbix-Alternative-Dashboard1-1024x351.png" />
+## Screenshot
+![Navigation Information](images/dashboard-screenshot.png)
 
 <strong>Features/requirements:</strong>
 <ul>
 <li>Gets triggers from hosts which are nested in hostgroups</li>
-<li>Currently we defined differrent users (within Zabbix) per hostgroup with read only rights </li>
+<li>Need user (within Zabbix) with read only rights</li>
 <li>Screens are optimized for 1920px capable monitors</li>
 <li>Masonry js library is used to align host blocks tightly</li>
-<li>Requires <a href="http://zabbixapi.confirm.ch">the Zabbix php api</a> which is included in this build</li>
+<li>Requires you need create user <u>login</u>, <u>password</u> with read-only rights AND <u>token</u> also created for this user!</li>
+<li>Requires <a href="https://github.com/confirm/PhpZabbixApi">Zabbix php api v3.0.0+</a> which is included in this build</li>
+<li>Requires PHP 8 or later </li>
 </ul>
   
 <strong>Host block features:</strong>
@@ -22,5 +26,5 @@ Trying to build a better dashboard function for Zabbix via the php api.
     <li>Triggered host blocks will get the state normal when the trigger state is "OK" (via acknowledgment of trigger or threshold level is normal)</li>
 </ul>
 
-I have tested the dashboard on Zabbix 2.2.2 but I think it will work fine in 2.4, although you might need a newer php api version.
-As we make use of the Zabbix php api, we have included it's GPLv3 license
+I have tested the dashboard on Zabbix 6.4 but I think it will work fine in 6.x later, although you might need a newer php api version (maybe).
+Since we use the Zabbix php api, which is installed via composer, all license and component files are included in this repository and are located in the vendor directory.

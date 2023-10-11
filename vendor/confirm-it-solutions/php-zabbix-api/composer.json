@@ -1,0 +1,64 @@
+{
+    "name": "confirm-it-solutions/php-zabbix-api",
+    "type": "library",
+    "description": "PhpZabbixApi library",
+    "keywords": [
+        "zabbix",
+        "sdk",
+        "api",
+        "json",
+        "rpc",
+        "client"
+    ],
+    "homepage": "https://github.com/confirm/PhpZabbixApi",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominique Barton",
+            "email": "phpzabbixapi@confirm.ch",
+            "homepage": "http://www.confirm.ch",
+            "role": "Developer"
+        },
+        {
+            "name": "Javier Spagnoletti",
+            "email": "phansys@gmail.com",
+            "homepage": "https://github.com/phansys",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0 || ^8.0",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "guzzlehttp/guzzle": "^6.5 || ^7.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.19",
+        "symfony/phpunit-bridge": "^5.2"
+    },
+    "suggest": {
+        "ext-posix": "Used to get the real user ID of the current process."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Confirm\\ZabbixApi\\": [
+                "src/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Confirm\\ZabbixApi\\Tests\\": [
+                "tests/"
+            ]
+        }
+    }
+}
