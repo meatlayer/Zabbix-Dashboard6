@@ -14,7 +14,7 @@ Cloned from https://github.com/incama/Zabbix-Dashboard and updated to work with 
 <li>Need user (within Zabbix) with read only rights</li>
 <li>Screens are optimized for 1920px capable monitors</li>
 <li>Masonry js library is used to align host blocks tightly</li>
-<li>Requires you need create user <u>login</u>, <u>password</u> with read-only rights AND <u>token</u> also created for this user!</li>
+<li>Requires create user <u>login</u>, <u>password</u> with read-only rights AND <u>token</u> also created for this user!</li>
 <li>Requires <a href="https://github.com/confirm/PhpZabbixApi">Zabbix php api v3.0.0+</a> which is included in this build</li>
 <li>Requires PHP 8 or later </li>
 </ul>
