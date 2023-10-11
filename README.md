@@ -2,6 +2,7 @@ Zabbix-Dashboard 6
 ================
 
 Simple Dashboard function for Zabbix via the <a href="https://github.com/confirm/PhpZabbixApi">Zabbix php api</a>.
+
 Cloned from https://github.com/incama/Zabbix-Dashboard and updated to work with Zabbix 6.4.
 
 ## Screenshot
